@@ -6,14 +6,22 @@
         <title>%UNITY_WEB_NAME%</title>
 
         <link rel="stylesheet" href="Assets/Stylesheet/Style.css" />
+        <link rel="stylesheet" href="Assets/Stylesheet/ProgressBar.css" />
     </head>
 
     <body>
         <section id="game-container" class="fullscreen-theme container"></section>
 
+        <div id="progress-bar" class="fullscreen-theme progress-bar">
+            <div id="progress-bar-fill" class="fullscreen-theme progress-bar-fill"></div>
+        </div>
+
+        <script type="text/javascript" src="Assets/JavaScript/ProgressBar.js"></script>
         <script type="text/javascript" src="%UNITY_WEBGL_LOADER_URL%"></script>
         <script type="text/javascript">
-            UnityLoader.instantiate('game-container', '%UNITY_WEBGL_BUILD_URL%');
+            UnityLoader.instantiate('game-container', '%UNITY_WEBGL_BUILD_URL%', {
+                'onProgress': ProgressBar.onProgress
+            });
         </script>
     </body>
 </html>
