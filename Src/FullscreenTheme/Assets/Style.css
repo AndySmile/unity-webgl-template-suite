@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.fullscreen-theme.container {
+    height: 100%;
+    background-color: rgb(25, 25, 155);
+}
