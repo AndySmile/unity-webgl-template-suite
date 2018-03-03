@@ -5,15 +5,6 @@ var ProgressBar = (function()
 {
     'use strict';
 
-    function hide(id)
-    {
-        var element = document.getElementById(id);
-
-        if (element != null && element.className.indexOf('hide') == -1) {
-            element.className += ' hide';
-        }
-    };
-
     function updateFillElement(id, status)
     {
         var element = document.getElementById(id);
@@ -27,7 +18,7 @@ var ProgressBar = (function()
         onProgress: function(instance, status)
         {
             if (status == 1) {
-                hide('progress-bar');
+                ElementHelper.hide('progress-bar');
             } else {
                 updateFillElement('progress-bar-fill', status);
             }
