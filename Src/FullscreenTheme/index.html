@@ -7,6 +7,7 @@
 
         <link rel="stylesheet" href="Assets/Stylesheet/Style.css" />
         <link rel="stylesheet" href="Assets/Stylesheet/ProgressBar.css" />
+        <link rel="stylesheet" href="Assets/Stylesheet/MessageDialog.css" />
     </head>
 
     <body>
@@ -22,12 +23,21 @@
             <span>Copyright (c) 2018 by %UNITY_CUSTOM_COPYRIGHT_NAME%. All rights reserved.</span>
         </footer>
 
+        <div id="message-dialog" class="fullscreen-theme message-dialog hide">
+            <div class="fullscreen-theme message-dialog-title">Message</div>
+            <div id="message-dialog-content" class="fullscreen-theme message-dialog-content"></div>
+
+            <button id="message-dialog-button" type="button" class="fullscreen-theme message-dialog-button">OK</button>
+        </div>
+
         <script type="text/javascript" src="Assets/JavaScript/ElementHelper.js"></script>
         <script type="text/javascript" src="Assets/JavaScript/ProgressBar.js"></script>
+        <script type="text/javascript" src="Assets/JavaScript/MessageDialog.js"></script>
         <script type="text/javascript" src="%UNITY_WEBGL_LOADER_URL%"></script>
         <script type="text/javascript">
             UnityLoader.instantiate('game-container', '%UNITY_WEBGL_BUILD_URL%', {
-                'onProgress': ProgressBar.onProgress
+                'onProgress': ProgressBar.onProgress,
+                'popup': MessageDialog.onReceiveMessage
             });
         </script>
     </body>
