@@ -8,6 +8,16 @@ body {
     height: 100%;
 }
 
+footer {
+    position: relative;
+    z-index: 1;
+    width: 30%;
+    top: -10%;
+    margin-left: auto;
+
+    color: #FFF;
+}
+
 .fullscreen-theme.container {
     height: 100%;
     background-color: rgb(25, 25, 155);
