@@ -17,11 +17,6 @@ var MessageDialog = (function()
                 ElementHelper.hide('message-dialog');
             });
         }
-
-        window.alert = function(message)
-        {
-            onReceiveMessage(message);
-        };
     };
 
     init();
