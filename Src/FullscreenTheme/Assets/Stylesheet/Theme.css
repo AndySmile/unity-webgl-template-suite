@@ -1,8 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 html,
 body {
     height: 100%;
@@ -16,10 +11,6 @@ footer {
     margin-left: auto;
 
     color: #FFF;
-}
-
-.hide {
-    display: none;
 }
 
 .fullscreen-theme.container {
