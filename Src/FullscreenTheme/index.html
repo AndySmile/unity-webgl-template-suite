@@ -18,10 +18,10 @@
             <div id="progress-bar-fill" class="fullscreen-theme progress-bar-fill"></div>
         </div>
 
-        <footer>
-            <span>%UNITY_WEB_NAME% v%UNITY_CUSTOM_VERSION%</span>
+        <footer itemscope itemtype="http://schema.org/VideoGame">
+            <span itemprop="name">%UNITY_WEB_NAME%</span> v<span itemprop="version">%UNITY_CUSTOM_VERSION%</span>
             -
-            <span>Copyright (c) 2018 by %UNITY_CUSTOM_COPYRIGHT_NAME%. All rights reserved.</span>
+            Copyright (c) <span itemprop="copyrightYear">2018</span> by <span itemprop="copyrightHolder">%UNITY_CUSTOM_COPYRIGHT_NAME%</span>. All rights reserved.
         </footer>
 
         <div id="message-dialog" class="fullscreen-theme message-dialog hide">
