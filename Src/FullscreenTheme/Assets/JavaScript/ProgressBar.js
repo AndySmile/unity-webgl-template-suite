@@ -10,7 +10,7 @@ var ProgressBar = (function()
         var element = document.getElementById(id);
 
         if (element != null) {
-            element.width = (100 * status) + '%';
+            element.style.width = (100 * status) + '%';
         }
     };
 
