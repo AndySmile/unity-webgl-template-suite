@@ -3,6 +3,7 @@
     z-index: 1;
     width: 30%;
     top: -50%;
+    transform: translate(0, -50%);
     margin: 0 auto;
 
     background-color: beige;
