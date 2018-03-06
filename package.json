@@ -25,5 +25,8 @@
   "bugs": {
     "url": "https://github.com/AndySmile/unity-webgl-template-suite/issues"
   },
-  "homepage": "https://github.com/AndySmile/unity-webgl-template-suite#readme"
+  "homepage": "https://github.com/AndySmile/unity-webgl-template-suite#readme",
+  "devDependencies": {
+    "grunt": "^1.0.2"
+  }
 }
