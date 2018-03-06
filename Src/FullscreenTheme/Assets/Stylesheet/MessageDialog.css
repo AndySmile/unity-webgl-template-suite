@@ -8,6 +8,7 @@
 
     background-color: beige;
     text-align: center;
+    box-shadow: 1px 5px 10px #000;
 }
 
 .fullscreen-theme.message-dialog-title {
