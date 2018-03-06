@@ -1,0 +1,29 @@
+{
+  "name": "unity-webgl-template-suite",
+  "version": "0.1.0",
+  "description": "WebGL templates for the Unity engine",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndySmile/unity-webgl-template-suite.git"
+  },
+  "keywords": [
+    "webgl",
+    "unity",
+    "template",
+    "unity",
+    "template",
+    "html",
+    "sass",
+    "javascript"
+  ],
+  "author": "Andy Liebke",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndySmile/unity-webgl-template-suite/issues"
+  },
+  "homepage": "https://github.com/AndySmile/unity-webgl-template-suite#readme"
+}
