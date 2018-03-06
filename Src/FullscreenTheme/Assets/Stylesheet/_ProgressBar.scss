@@ -1,0 +1,19 @@
+.fullscreen-theme.progress-bar {
+    &.progress-bar {
+        position: relative;
+        width: 60%;
+        height: 4%;
+        top: -50%;
+        z-index: 1;
+        margin: 0 auto;
+    
+        border: 1px solid #FFF;
+    }
+
+    .progress-bar-fill {
+        width: 0;
+        height: 100%;
+    
+        background-color: #fff;
+    }
+}
