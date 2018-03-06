@@ -6,7 +6,7 @@ This suite includes WebGL template themes for the Unity engine.
 
 ## Themes
 
-* **FullscreenTheme:** A theme which will scale the render canvas to the max width and height to fill out the entire browser window.
+* **FullscreenTheme:** A theme which will scale the render canvas to the max width and height to fill out the entire browser window. [DEMO](http://andysmiles4games.com/Demo/UnityWebGLTemplateSuite/FullscreenTheme/index.html)
 
 ## Install
 
