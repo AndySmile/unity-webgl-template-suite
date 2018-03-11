@@ -26,7 +26,8 @@ module.exports = function(grunt)
         copy: {
             dist: {
                 files: {
-                    'Dist/FullscreenTheme/index.html': 'Src/FullscreenTheme/index.html'
+                    'Dist/FullscreenTheme/index.html': 'Src/FullscreenTheme/index.html',
+                    'Dist/FullscreenTheme/thumbnail.png': 'Src/FullscreenTheme/thumbnail.png'
                 }
             }
         }
