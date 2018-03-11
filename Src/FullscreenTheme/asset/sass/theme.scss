@@ -1,26 +1,6 @@
 @import '_common.scss';
 @import '_message-dialog.scss';
 @import '_progress-bar.scss';
-
-html,
-body {
-    height: 100%;
-}
-
-footer {
-    position: relative;
-    z-index: 1;
-    width: 30%;
-    top: -8%;
-    margin-left: 1%;
-
-    color: #FFF;
-}
-
-.fullscreen-theme {
-    .container {
-        height: 100%;
-        background-color: #555;
-    }
-}
-    
+@import '_container.scss';
+@import '_footer.scss';
+@import '_page.scss';
