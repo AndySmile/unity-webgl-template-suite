@@ -20,14 +20,24 @@ module.exports = function(grunt)
                     'Dist/FullscreenTheme/asset/js/app.min.js': 'Src/FullscreenTheme/asset/js/*.js'
                 }
             }
+        },
+
+        copy: {
+            dist: {
+                files: {
+                    'Dist/FullscreenTheme/index.html': 'Src/FullscreenTheme/index.html'
+                }
+            }
         }
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('default', [
         'sass',
-        'uglify'
+        'uglify',
+        'copy'
     ]);
 };
