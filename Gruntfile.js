@@ -17,7 +17,7 @@ module.exports = function(grunt)
         uglify: {
             dist: {
                 files: {
-                    'Dist/FullscreenTheme/asset/js/app.min.js': 'Src/FullscreenTheme/asset/js/*.js'
+                    'Dist/FullscreenTheme/asset/js/app.min.js': 'Src/Common/js/*.js'
                 }
             }
         },
