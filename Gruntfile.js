@@ -4,7 +4,8 @@ module.exports = function(grunt)
         sass: {
             options: {
                 style: 'compressed',
-                sourcemap: 'none'
+                sourcemap: 'none',
+                loadPath: 'Src/Common/sass/'
             },
 
             dist: {
