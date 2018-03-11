@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+
+        <title>%UNITY_WEB_NAME%</title>
+
+        <link rel="stylesheet" href="asset/css/theme.min.css" />
+    </head>
+
+    <body>
+        <section id="game-container" class="fullscreen-theme container"></section>
+
+        <div id="progress-bar" class="fullscreen-theme progress-bar">
+            <div id="progress-bar-fill" class="fullscreen-theme progress-bar-fill"></div>
+        </div>
+
+        <footer itemscope itemtype="http://schema.org/VideoGame">
+            <span itemprop="name">%UNITY_WEB_NAME%</span> v<span itemprop="version">%UNITY_CUSTOM_VERSION%</span>
+            -
+            Copyright (c) <span itemprop="copyrightYear">2018</span> by <span itemprop="copyrightHolder">%UNITY_CUSTOM_COPYRIGHT_NAME%</span>. All rights reserved.
+        </footer>
+
+        <div id="message-dialog" class="fullscreen-theme message-dialog hide">
+            <div class="fullscreen-theme message-dialog-title">Message</div>
+            <div id="message-dialog-content" class="fullscreen-theme message-dialog-content"></div>
+
+            <button id="message-dialog-button" type="button" class="fullscreen-theme message-dialog-button">OK</button>
+        </div>
+
+        <script type="text/javascript" src="asset/js/app.min.js"></script>
+        <script type="text/javascript" src="%UNITY_WEBGL_LOADER_URL%"></script>
+        <script type="text/javascript">
+            UnityLoader.instantiate('game-container', '%UNITY_WEBGL_BUILD_URL%', {
+                'onProgress': ProgressBar.onProgress,
+                'popup': MessageDialog.onReceiveMessage
+            });
+        </script>
+    </body>
+</html>
