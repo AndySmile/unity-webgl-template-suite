@@ -1,5 +1,5 @@
 .fullscreen-theme {
-    &.message-dialog {
+    .message-dialog {
         position: relative;
         z-index: 1;
         width: 30%;
@@ -12,7 +12,7 @@
         box-shadow: 1px 5px 10px #000;
     }
 
-    &.message-dialog-title {
+    .message-dialog-title {
         padding: 1%;
         margin-bottom: 2%;
     
@@ -21,11 +21,11 @@
         border-bottom: 1px solid gray;
     }
 
-    &.message-dialog-content {
+    .message-dialog-content {
         padding: 0 2% 2%
     }
 
-    &.message-dialog-button {
+    .message-dialog-button {
         padding: 1% 10%;
         margin: 0 0 2%
     }
