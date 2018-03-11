@@ -9,7 +9,7 @@ module.exports = function(grunt)
 
             dist: {
                 files: {
-                    'Dist/FullscreenTheme/Assets/Stylesheet/Theme.min.css': 'Src/FullscreenTheme/Assets/Stylesheet/Theme.scss'
+                    'Dist/FullscreenTheme/asset/css/theme.min.css': 'Src/FullscreenTheme/asset/css/theme.scss'
                 }
             }
         }
